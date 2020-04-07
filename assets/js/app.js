@@ -61,7 +61,7 @@ var chartGroup = svg.append("g")
   
     // circles
     chartGroup.selectAll("circle")
-        .data(myData)
+        .data(statedata)
         .enter()
         .append("circle")
         .attr("cx", d => xLinearScale(d.poverty))
